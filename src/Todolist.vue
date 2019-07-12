@@ -1,5 +1,6 @@
 <template>
-<div>
+<div id = 'app'>
+  router-vue;
     <p>{{ title }}</p>
     <p v-if='showSub'>{{ subTitle }}</p>
     <input @keyup.enter = 'clickInfo' type= 'text' v-model='myTodo'>
@@ -44,12 +45,17 @@
       <p v-if = 'ischangeColor'>网络连接错误 404</p>
       <p v-else-if = 'ischangeLength'>网络连接成功 404</p>
 
-
 </div>
 </template>
 
 <script>
 export default {
+// Vue.component('introduce',{
+  // template:'<p>大家好，给大家介绍一下我自己</p>'
+  // data： function(){
+    // name:'zhangjiaojiao'
+  // }
+// }),
 data() {
     return{
     title: 'hello vuejs!',

@@ -1,10 +1,12 @@
+<!-- 1模板:html结构 -->
 <template>
   <div id="app">
     <img src="./assets/logo.png">
     <HelloWorld/>
   </div>
+  <p></p>
 </template>
-
+<!-- 2行为:处理逻辑 -->
 <script>
 import HelloWorld from './components/HelloWorld'
 
@@ -15,7 +17,7 @@ export default {
   }
 }
 </script>
-
+<!-- 3样式:解决样式 -->
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
